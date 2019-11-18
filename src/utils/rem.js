@@ -1,10 +1,8 @@
-//淘宝适配方案
-
 /* 
   通过js来动态添加rem 
 */
 
-;(function(designWidth, maxWidth) {//设计稿的宽度、最大宽度
+;(function(designWidth, maxWidth) {
 	var doc = document,
 	win = window,
 	docEl = doc.documentElement,

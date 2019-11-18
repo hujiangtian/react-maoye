@@ -1,14 +1,14 @@
-//打造头部
-import React  from 'react';
-//引入样式文件
-import './index.scss';
+import React from 'react'
+import './index.scss'
+const Tab = props =>{
 
-//函数式组件展示样式
-const Tab = props => {
-    return (
-        <header>
-            <span>猫眼电影</span>
-        </header>
-    )
+  const {goBack} =props.history
+  return(
+    <header className='header-box'>
+     {props.navFlag&& <i className='fa fa-angle-left' onClick={goBack}></i>}
+      <span>{props.title}</span>
+    </header>
+  )
 }
-export default Tab;
+
+export default Tab
